@@ -26,22 +26,24 @@
 
 ## 복합 센서 융합 전략
 * 초기 융합
-    ![image](https://user-images.githubusercontent.com/68180205/148562141-ab6e8627-310a-4d0f-bbfa-253cd82cfe53.png)
   * 센서를 원시데이터 영역에서 융합을 하는 전략
   * ### 장점
     * 인지 처리를 한번만 수행하기 때문에 계산량이 적음
   * ### 단점
     * 카메라와 라이다같이 데이터의 분포가 확연히 다를 경우 융합에 의한 성능 이득이 낮음
+  
+    ![image](https://user-images.githubusercontent.com/68180205/148562141-ab6e8627-310a-4d0f-bbfa-253cd82cfe53.png)
 
 * 후기 융합
   * 다중 센서 데이터를 각각 처리하여 인지 결과를 도출한 후 융합하는 전략
-  ![image](https://user-images.githubusercontent.com/68180205/148560972-aa5ba6d4-468a-4948-ba08-e1c3fefd6ae0.png)
-   * ### 장점
+  * ### 장점
     * 최종 단계에서 융합하기 때문에 센서 오작동에 대한 분석이 가능하다
     * 각 센서 인지 결과에 대한 신뢰도 파악 가능
-   * ### 단점
+  * ### 단점
     * 모든 센서 데이터에 대해 인지 처리를 수행해야됨
     * 계산량이 많음
+    
+    ![image](https://user-images.githubusercontent.com/68180205/148560972-aa5ba6d4-468a-4948-ba08-e1c3fefd6ae0.png)
 
 * 중기 융합
   * 다중 센서 데이트를 각각 처리하여 인지 결과를 도출한 후 융합하고 그 결과로 다시 인지 결과를 도출하는 전략
@@ -49,4 +51,5 @@
   * 초기융합 + 후기융합의 장점을 모음
   * 최근 딥러닝 기술이 인지에 적용되면서 중기 융합 전략을 선호
   * 초기 융합이나 후기융합 기술에 비해 더 좋은 성능을 달성 할 수 있다.
+
     ![image](https://user-images.githubusercontent.com/68180205/148561207-76e50f0d-b720-4b03-bb62-03f82049bff1.png)
